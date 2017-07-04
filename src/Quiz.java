@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Quiz {
 
@@ -5,7 +6,7 @@ public class Quiz {
     public static void main(String[] args){
     //mainを置く
     	int situ1 = situmon1();
-
+    	int situmon6 = situmon6();
     	//質問内容
     	//
     }
@@ -38,9 +39,26 @@ public class Quiz {
 
     }
 
-    public void situmon6(){
-
-
+    public static int situmon6(){
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("キツツキはどっち");
+    	System.out.println("1:woodpecker  2:hummingbird");
+    	System.out.println("回答:　");
+    	int ss,sss;
+    	for(;;){
+    		ss = sc.nextInt();
+    		if(ss == 1 || ss == 2){
+    			break;
+    		}
+    	}
+    	if(ss == 1){
+    		System.out.println("正解です！");
+    		sss = 1;
+    	}else{
+    		System.out.println("不正解です！");
+    		sss = 0;
+    	}
+    	return sss;
     }
 
 }
