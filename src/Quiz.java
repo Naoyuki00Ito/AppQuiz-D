@@ -31,6 +31,8 @@ public class Quiz {
 
 	}
    public void situmon4(){
+	   System.out.println("中里の生涯のともは？");
+	   System.out.println("1,香風智乃　2、天々座理世");
 
 
     }
