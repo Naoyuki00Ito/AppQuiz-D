@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Quiz {
 
@@ -5,7 +6,7 @@ public class Quiz {
     public static void main(String[] args){
     //mainを置く
     	int situ1 = situmon1();
-
+        int situmon2 = situmon2();
     	//質問内容
     	//
     }
@@ -19,9 +20,17 @@ public class Quiz {
 		return answer;
 	}
 
-	public void situmon2(){
-
-
+	public static int situmon2(){
+		int answer = 0;
+		//内容表示
+		System.out.print("ヒデが飼っているワンちゃんの名前は？");
+		//回答
+		System.out.print("1.クッキー 2.ビスケット 3.クラッカー 4.ポチ");
+		Scanner sc = new Scanner(System.in);
+		answer = sc.nextInt();
+		sc.close();
+		//答え
+		return answer;
 	}
 
 
